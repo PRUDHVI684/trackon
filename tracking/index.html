@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Bus Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnpuJ2R5AyBE4rHatTKKwwHcc9Y2u1Ato&libraries=marker&callback=initMap">
+</script>
+
+
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>College Bus Tracking System</h1>
+
+    <div class="container">
+        <!-- Driver's Section -->
+        <h2>Driver's Panel</h2>
+        <input type="text" id="busNumber" placeholder="Enter Bus Number">
+        <button onclick="trackBus()">Track Bus</button>
+
+
+        <!-- User's Section -->
+        <h2>User's Panel</h2>
+        <input type="text" id="busNumber" placeholder="Enter Bus Number">
+        <button onclick="trackBus()">Track</button>
+    </div>
+
+    <!-- Google Maps Display -->
+    <div id="map"></div>
+</body>
+</html>
